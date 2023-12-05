@@ -1,0 +1,1223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Netflix</title>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/23a749b538.js"
+      crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/home-style.css">
+    <!-- <link rel="stylesheet" href="./CSS/responsive.css"> -->
+  </head>
+  <body>
+    <!----------------------------------------- Navbar ----------------------------------------->
+    <nav class="navbar navbar-expand-lg netflix-navbar">
+      <div class="container-fluid">
+        <div class="netflix-row">
+          <!----------------------------------------- Left ----------------------------------------->
+          <section class="left d-flex align-items-center">
+            <a class="navbar-brand" href="./index.html"><img
+                src="./img/logo.png"></a>
+            <!----------------------------------------- Dropdown ----------------------------------------->
+            <div class="netflix-dropdown-box dropdown">
+              <button class="netflix-dropdown dropdown-toggle" type="button"
+                id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Browse
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Home</a></li>
+                <li><a class="dropdown-item" href="#">TV Shows</a></li>
+                <li><a class="dropdown-item" href="#">Movies</a></li>
+                <li><a class="dropdown-item" href="#">News & Popular</a></li>
+                <li><a class="dropdown-item" href="#">My List</a></li>
+              </ul>
+            </div>
+            <!----------------------------------------- Tabs ----------------------------------------->
+            <div class="netflix-nav">
+              <section>
+                <button>Home</button>
+                <button>TV Shows</button>
+                <button>Movies</button>
+                <button>News & Popular</button>
+                <button>My List</button>
+                <button>Browse by Language</button>
+              </section>
+            </div>
+          </section>
+          <!----------------------------------------- Right ----------------------------------------->
+          <section class="right d-flex align-items-center">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-bell"></i>
+            <div class="netflix-profile"></div>
+            <i class="fa-solid fa-caret-down"></i>
+          </section>
+        </div>
+      </div>
+    </nav>
+
+    <!----------------------------------------- Video ----------------------------------------->
+    <div>
+      <section class="netflix-home-video">
+        <div class="top"></div>
+        <div class="bottom"></div>
+        <video src="./Video/ONE-PIECE-Teaser.mp4" autoplay muted loop></video>
+        <div class="content">
+          <div class="left">
+            <img src="./img/ONE-PIECE-logo.png" alt>
+            <div class="mt-2 d-flex align-items-center">
+              <button type="button" class="btn btn-light m-2"
+                style="width: 120px;"><i class="fa-solid fa-play text-dark p-1"></i>Play</button>
+              <button type="button" class="btn btn-secondary m-2"><i
+                  class="fa-solid fa-circle-info p-1"></i>More Info</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!----------------------------------------- Slider ----------------------------------------->
+    <div class="slider-box">
+      <section class="container-fluid slide1">
+        <div class="d-flex justify-content-between" >
+          <p class="text-white fw-bold fs-5">Trending</p>
+          <!-- carousel-indicators -->
+          <div class="netflix-carousel-indicators"> 
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-inner" style="position: relative; overflow: visible;">
+            <div class="carousel-item active">
+              <section class="d-flex" style="position: absolute;">
+                <!-- CARD 1 -->
+                <div class="card">
+                  <img src="./img/TheTailor-Drama-3seasons.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>3 Seasons | Drama</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/kingtheland -Romance-1season.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>1 Season | Romance</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/Manifest-Mystery-4seasons.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>4 Seasons | Mystery</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/MoneyHeist-Drama-5Seasons.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>5 Seasons | Drama</p></div>
+                    </section>
+                  </div>
+                </div>
+                
+                <div class="card">
+                  <img src="./img/the witcher-Drama  3 seasons.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>3 Seasons | Drama</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/StrongGirlNam-soon-Action-1season.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>1 Season | Action</p></div>
+                    </section>
+                  </div>
+                </div>
+
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section class="d-flex" style="position: absolute;">
+                <div class="card">
+                  <img src="./img/StrongGirlNam-soon-Action-1season.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>1 Season | Action</p></div>
+                    </section>
+                  </div>
+                </div> 
+                
+                <div class="card">
+                  <img src="./img/elite-Drama-7 seasons.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>7 Seasons | Drama</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/headtohead1h34mComedies.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>1h 34m | Comedies</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/LastCallforIstanbul-1h 31m-Drama.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p> 1h 31m | Drama</p></div>
+                    </section>
+                  </div>
+                </div>
+                
+                <div class="card">
+                  <img src="./img/WeCanBeHeroes2020-ActionFamily-1h40m.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>1h 40m | Family Action</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/wednesday-Horror-1 season.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>1 Season | Horror</p></div>
+                    </section>
+                  </div>
+                </div>
+
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section class="d-flex" style="position: absolute;">
+                <!-- CARD 1 -->
+                <div class="card">
+                  <img src="./img/wednesday-Horror-1 season.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>1 Season | Horror</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/the inmate Drama ‧ 1 season.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>1 Season | Drama</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/themother-ActionThriller-1h58m.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>1h 58m | Action Thriller</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/one piece-Action- 1 season.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p> 1 Season | Action</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/SquidGameTheChallenge1SeasonRealityTV.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>1 Season | Reality TV</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/TheTailor-Drama-3seasons.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>3 Seasons | Drama</p></div>
+                    </section>
+                  </div>
+                </div>
+
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-fluid slide2">
+        <div class="d-flex justify-content-between" >
+          <p class="text-white fw-bold fs-5">Popular on Netflix</p>
+          <!-- carousel-indicators -->
+          <div class="netflix-carousel-indicators"> 
+            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        </div>
+        <div id="carouselExampleIndicators2" class="carousel slide">
+          <div class="carousel-inner" style="position: relative; overflow: visible;">
+            <div class="carousel-item active">
+              <section class="d-flex" style="position: absolute;">
+                <div class="card">
+                  <img src="./img/lupin-Thriller-3 seasons.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>3 Season | Thriller</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/MoneyHeist-Drama-5Seasons.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>5 Seasons | Drama</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/PeakyBlinders-Drama-6seasons.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>6 Seasons | Drama</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/LastCallforIstanbul-1h 31m-Drama.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>1h 31m | Drama</p></div>
+                    </section>
+                  </div>
+                </div>
+                
+                <div class="card">
+                  <img src="./img/nowhere2023ThrillerDrama.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>1h 49m | Thriller Drama</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/one piece-Action- 1 season.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>1 Season | Action</p></div>
+                    </section>
+                  </div>
+                </div>
+
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section class="d-flex" style="position: absolute;">
+                <div class="card">
+                  <img src="./img/one piece-Action- 1 season.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>1 Season | Action</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/elchapoDrama3seasons.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>3 Seasons | Drama</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/outerbanksDrama3seasons.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>3 Seasons | Drama</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/lucifer-Drama-6seasons.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>6 Seasons | Drama</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/Manifest-Mystery-4seasons.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>4 Seasons | Mystery</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/SquidGameTheChallenge1SeasonRealityTV.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>1 Season | Reality TV</p></div>
+                    </section>
+                  </div>
+                </div>
+                
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section class="d-flex" style="position: absolute;">
+                <div class="card">
+                  <img src="./img/SquidGameTheChallenge1SeasonRealityTV.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>1 Season | Reality TV</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/elite-Drama-7 seasons.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>7 Seasons | Drama</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/headtohead1h34mComedies.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>1h 34m | Comedies</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/LastCallforIstanbul-1h 31m-Drama.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p> 1h 31m | Drama</p></div>
+                    </section>
+                  </div>
+                </div>
+                
+                <div class="card">
+                  <img src="./img/WeCanBeHeroes2020-ActionFamily-1h40m.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>1h 40m | Family Action</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/lupin-Thriller-3 seasons.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>3 Season | Thriller</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-fluid slide3">
+        <div class="d-flex justify-content-between" >
+          <p class="text-white fw-bold fs-5">US TV Shows</p>
+          <!-- carousel-indicators -->
+          <div class="netflix-carousel-indicators"> 
+            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        </div>
+        <div id="carouselExampleIndicators3" class="carousel slide">
+          <div class="carousel-inner" style="position: relative; overflow: visible;">
+
+            <div class="carousel-item active">
+              <section class="d-flex" style="position: absolute;">
+                <div class="card">
+                  <img src="./img/one piece-Action- 1 season.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>1 Season | Action</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/elchapoDrama3seasons.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>3 Seasons | Drama</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/outerbanksDrama3seasons.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>3 Seasons | Drama</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/lucifer-Drama-6seasons.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>6 Seasons | Drama</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/Manifest-Mystery-4seasons.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>4 Seasons | Mystery</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/the witcher-Drama  3 seasons.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>3 Seasons | Drama</p></div>
+                    </section>
+                  </div>
+                </div>
+                
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section class="d-flex" style="position: absolute;">
+                <!-- CARD 1 -->
+                <div class="card">
+                  <img src="./img/AnneWithAnE-Drama-3seasons.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>3 Seasons | Drama</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/the inmate Drama ‧ 1 season.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>1 Season | Drama</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/themother-ActionThriller-1h58m.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>1h 58m | Action Thriller</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/one piece-Action- 1 season.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p> 1 Season | Action</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/SquidGameTheChallenge1SeasonRealityTV.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>1 Season | Reality TV</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/TheTailor-Drama-3seasons.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>3 Seasons | Drama</p></div>
+                    </section>
+                  </div>
+                </div>
+
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section class="d-flex" style="position: absolute;">
+                <div class="card">
+                  <img src="./img/SquidGameTheChallenge1SeasonRealityTV.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>1 Season | Reality TV</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/elite-Drama-7 seasons.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>7 Seasons | Drama</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/headtohead1h34mComedies.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>1h 34m | Comedies</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/LastCallforIstanbul-1h 31m-Drama.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p> 1h 31m | Drama</p></div>
+                    </section>
+                  </div>
+                </div>
+                
+                <div class="card">
+                  <img src="./img/LaReinaDelSur-Drama-3seasons.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>3 Seasons | Drama</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                <div class="card">
+                  <img src="./img/DailyDoseofSunshine-Drama-1season.jpg" class="card-img-top" alt="...">
+                  <div class="card-body text-white">
+                    <section class="card-body-icon">
+                      <div>
+                        <i class="fa-solid fa-circle-play"></i>
+                        <i class="fa-regular fa-circle-check"></i>
+                      </div>
+                      <div>
+                        <i class="fa-regular fa-circle-down"></i>
+                      </div>
+                    </section>
+                    <section class="card-body-info">
+                      <div><p>3 Season | Drama</p></div>
+                    </section>
+                  </div>
+                </div>
+
+                
+              </section>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!----------------------------------------- Footer ----------------------------------------->
+    <div class="container footer">
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+            <div class="row">
+              <div class="col-md-3">
+                    <ul>
+                      <li>Audio and Subtitle</li>
+                      <li>Media Center</li>
+                      <li>Privacy</li>
+                      <li>Contact Us</li>
+                    </ul>
+              </div>
+              <div class="col-md-3">
+                <ul>
+                  <li>Audio description</li>
+                  <li>Investor Relation</li>
+                  <li>Terms and Conditions</li>
+                  <li>Legal Notices</li>
+                </ul>
+          </div>
+          <div class="col-md-3">
+            <ul>
+              <li>Help Center</li>
+              <li>Jobs</li>
+        
+            </ul>
+           </div>
+           <div class="col-md-3">
+            <ul>
+              <li>Gift card</li>
+              <li>Subscription</li>
+        
+            </ul>
+           </div>
+            </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-10 mx-auto">
+          <div class="row">
+           
+            <div class="col">
+              <p class="copy-right">Netflix copyright</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+    <!----------------------------------------- JAVASCRIPT ----------------------------------------->
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                var scroll = $(window).scrollTop();
+                if (scroll > 100) {
+                    $(".netflix-navbar").css("background" , "#0C0C0C");
+                }
+                else{
+                    $(".netflix-navbar").css("background" , "transparent");  	
+                }
+            });
+        })
+
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+  </body>
+</html>

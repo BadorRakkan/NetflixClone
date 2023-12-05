@@ -1,0 +1,43 @@
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/SA-en-20231106.jpg);
+    height: 100vh;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+.login-top{
+    width: 100vw;
+    height: 80px;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.login-top a img{
+    width: 180px;
+}
+
+.login-box{
+    background-color: rgba(0,0,0,0.85);
+    width: 430px;
+    height: auto;
+    border-radius: 7px;
+    padding: 50px;
+}
+
+.small-text{
+    font-size: 13px;
+}
+
+.form-control{
+    box-shadow: none !important;
+}
+
+@media(max-width:800px){
+    body{
+        background-color: #000 !important; 
+        background-image: none !important;
+    }
+
+    .login-top a img{
+        width: 90px;
+    }
+}
